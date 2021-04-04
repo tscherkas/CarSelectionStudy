@@ -1,16 +1,17 @@
-﻿namespace Models
+﻿using System;
+
+namespace Models
 {
+    [Serializable]
     public class CarListItem
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
-        public string Title { get; set; }
+        public string title { get; set; }
 
-        public string author { get; set; }
+        public string url { get; set; }
 
-        public string Url { get; set; }
-
-        public string Html_Url { get; set; }
+        public string html_url { get; set; }
 
     }
 }

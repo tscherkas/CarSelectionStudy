@@ -25,13 +25,18 @@ namespace ConsoleCarSelector
             var carsList = this.carRepository.GetCarsByPrice(priceFrom, priceTo, currency);
             var carListFiltered = carsList?.Where(x => IsMatchCarDescription(description, x));
 
-            return carListFiltered?.Aggregate(new StringBuilder(), (sb, car) => sb.AppendLine(car.Html_Url)).ToString()
+            return carListFiltered?.Aggregate(new StringBuilder(), (sb, car) => sb.AppendLine(car.html_url)).ToString()
                 ?? string.Empty;
         }
 
         private bool IsMatchCarDescription(string description, CarListItem x)
         {
-            return this.carRepository.GetCarsDescription(x.Url).Contains(description, StringComparison.OrdinalIgnoreCase);
+            bool v = this.carRepository.GetCarsDescription(x.url)?.Contains(description, StringComparison.OrdinalIgnoreCase) ?? false;
+            if(v)
+            {
+                Console.WriteLine(x.html_url);
+            }
+            return v;
         }
     }
 }

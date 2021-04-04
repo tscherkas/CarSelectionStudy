@@ -16,5 +16,11 @@ namespace ConsoleCarSelector.Tests
         {
             Assert.Fail();
         }
+
+        [TestMethod()]
+        public void GetCarsDescriptionTest()
+        {
+            Assert.Fail();
+        }
     }
 }
