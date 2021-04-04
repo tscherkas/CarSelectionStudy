@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCarSelector", "ConsoleCarSelector\ConsoleCarSelector.csproj", "{213215A6-7507-47EA-8A7C-5E6503C893BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{213215A6-7507-47EA-8A7C-5E6503C893BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{213215A6-7507-47EA-8A7C-5E6503C893BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{213215A6-7507-47EA-8A7C-5E6503C893BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{213215A6-7507-47EA-8A7C-5E6503C893BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62D5596D-2DDC-4D34-ADA9-9D5195A84036}
+	EndGlobalSection
+EndGlobal
